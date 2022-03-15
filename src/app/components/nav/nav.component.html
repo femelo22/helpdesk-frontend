@@ -6,7 +6,7 @@
                 <i class="material-icons">home</i>
                 Home
             </a>
-            <a mat-list-item routerLink="/">
+            <a mat-list-item routerLink="tecnicos">
                 <i class="material-icons">account_circle</i>
                 Técnicos
             </a>
@@ -27,7 +27,7 @@
 
     <div class="sidenav-content">
         <app-header></app-header>
-        <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+        <button class="menu mat-elevation-z8" (load)="drawer.toggle()" mat-icon-button>
             <mat-icon>menu</mat-icon>
         </button>
         <router-outlet></router-outlet>
