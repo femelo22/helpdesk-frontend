@@ -1,5 +1,17 @@
 <div class="container">
 
+  <h1>Técnicos</h1>
+
+  <button mat-raised-button class="mat-elevation-z8" color="primary">
+    Novo técnico
+    <mat-icon>person_add</mat-icon>
+  </button>
+
+  <mat-form-field appearance="standard">
+    <mat-label>Filtro</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="" #input>
+  </mat-form-field>
+
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
 
