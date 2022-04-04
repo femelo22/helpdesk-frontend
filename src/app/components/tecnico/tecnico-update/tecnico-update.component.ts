@@ -44,6 +44,7 @@ export class TecnicoUpdateComponent implements OnInit {
     this.service.findById(this.tecnico.id).subscribe(resposta => {
       console.log(resposta);
       this.tecnico = resposta;
+      this.tecnico.perfis = resposta.perfis
     });
   }
 
