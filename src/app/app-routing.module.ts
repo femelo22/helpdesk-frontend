@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AuthGuard } from "./auth/auth.guard";
+import { ClienteCreateComponent } from "./components/cliente/cliente-create/cliente-create.component";
 import { ClienteListComponent } from "./components/cliente/cliente-list/cliente-list.component";
 import { HomeComponent } from "./components/home/home.component";
 import { LoginComponent } from "./components/login/login.component";
@@ -20,6 +21,7 @@ const routes: Routes = [
         { path: 'tecnicos/update/:id', component: TecnicoUpdateComponent},
         { path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent},
         { path: 'clientes', component: ClienteListComponent },
+        { path: 'clientes/create', component: ClienteCreateComponent },
     ]}
 ];
 
