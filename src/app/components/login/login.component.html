@@ -15,6 +15,7 @@
         matInput 
         placeholder="xxx@email.com"
        >
+       <mat-icon matSuffix>email</mat-icon>
     </mat-form-field>
 
     <mat-form-field class="full-width" appearance="fill">
@@ -28,6 +29,7 @@
         matInput 
         placeholder=""
       >
+      <mat-icon matSuffix>password</mat-icon>
     </mat-form-field>
 
     <button (click)="logar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Entrar</button>
