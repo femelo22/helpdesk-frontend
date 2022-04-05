@@ -36,16 +36,13 @@ export class ClienteDeleteComponent implements OnInit {
 
   findById(): void {
     this.service.findById(this.cliente.id).subscribe(resposta => {
-      console.log(resposta);
       this.cliente = resposta;
       this.cliente.perfis = resposta.perfis
     });
   }
 
   delete(): void {
-    console.log(this.cliente);
     this.service.delete(this.cliente.id).subscribe(resposta => {
-      console.log(resposta);
       this.toast.success('Cliente deletado com sucesso!', 'Delete');
       this.router.navigate(['tecnicos']);
     }, ex => {

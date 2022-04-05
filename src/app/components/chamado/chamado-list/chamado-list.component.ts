@@ -30,7 +30,6 @@ export class ChamadoListComponent implements OnInit {
 
   findAll(): void {
     this.service.findAll().subscribe(resposta => {
-      console.log(resposta)
       this.dataSource = new MatTableDataSource<Chamado>(resposta);
       this.dataSource.paginator = this.paginator;
     });

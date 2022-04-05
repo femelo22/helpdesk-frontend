@@ -43,7 +43,6 @@ export class ClienteUpdateComponent implements OnInit {
 
   findById(): void {
     this.service.findById(this.cliente.id).subscribe(resposta => {
-      console.log(resposta);
       this.cliente = resposta;
       this.cliente.perfis = resposta.perfis
     });
@@ -51,7 +50,6 @@ export class ClienteUpdateComponent implements OnInit {
 
   update(): void {
     this.service.update(this.cliente).subscribe(resposta => {
-      console.log(resposta);
       this.toast.success('Técnico atualizado com sucesso!', 'Atualização');
       this.router.navigate(['clientes']);
     }, ex => {
