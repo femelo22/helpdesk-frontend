@@ -23,9 +23,9 @@
          name="status"
          [formControl]="status" 
          required>
-           <mat-option value="0">ABERTO</mat-option>
-           <mat-option value="1">EM ANDAMENTO</mat-option>
-           <mat-option value="2">ENCERRADO</mat-option>
+           <mat-option value="ABERTO">ABERTO</mat-option>
+           <mat-option value="ANDAMENTO">EM ANDAMENTO</mat-option>
+           <mat-option value="ENCERRADO">ENCERRADO</mat-option>
          </mat-select>
        </mat-form-field>
 
@@ -36,9 +36,9 @@
          name="prioridade"
          [formControl]="prioridade" 
          required>
-           <mat-option value="0">BAIXA</mat-option>
-           <mat-option value="1">MÉDIA</mat-option>
-           <mat-option value="2">ALTA</mat-option>
+           <mat-option value="BAIXA">BAIXA</mat-option>
+           <mat-option value="MEDIA">MÉDIA</mat-option>
+           <mat-option value="ALTA">ALTA</mat-option>
          </mat-select>
        </mat-form-field>
     </div>
