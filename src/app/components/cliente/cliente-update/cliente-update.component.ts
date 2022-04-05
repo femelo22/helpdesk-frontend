@@ -50,7 +50,6 @@ export class ClienteUpdateComponent implements OnInit {
   }
 
   update(): void {
-    console.log(this.cliente);
     this.service.update(this.cliente).subscribe(resposta => {
       console.log(resposta);
       this.toast.success('Técnico atualizado com sucesso!', 'Atualização');
