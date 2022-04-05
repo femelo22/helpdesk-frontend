@@ -52,5 +52,4 @@ export class ChamadoListComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 
-
 }
